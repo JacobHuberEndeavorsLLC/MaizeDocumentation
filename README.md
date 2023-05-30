@@ -1,23 +1,35 @@
-# Nextra Docs Template 
+# Taiko documentation website
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+## Pre-Installation
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+Make sure you have pnpm installed on your system. You can install it by npm as well:
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+```sh
+npm install -g pnpm
+```
 
-## Quick Start
+or on any POSIX systems by wget one-line official command:
 
-Click the button to clone this repository and deploy it on Vercel:
+```sh
+wget -qO- https://get.pnpm.io/install.sh | sh -
+```
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+for any specific cases or systems check the official page https://pnpm.io/installation
 
-## Local Development
+## Installation
 
-First, run `pnpm i` to install the dependencies.
+```sh
+pnpm install
+```
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+## Local development
 
-## License
+Start a local development server:
 
-This project is licensed under the MIT License.
+```sh
+pnpm dev
+```
+
+## Contributing
+
+Refer to [CONTRIBUTING.md](../../CONTRIBUTING.md).

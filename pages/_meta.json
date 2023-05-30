@@ -1,15 +1,20 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
+  "index": {
+    "display": "hidden",
+    "title": "Taiko",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "docs": {
+    "title": "Docs",
     "type": "page"
   },
-  "contact": {
-    "title": "Contact ↗",
+  "blog": {
+    "title": "Blog ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://mirror.xyz/labs.taiko.eth",
     "newWindow": true
   }
 }
