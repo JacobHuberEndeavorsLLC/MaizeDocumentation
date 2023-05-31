@@ -1,27 +1,27 @@
 import {
-  ArrowPathIcon,
-  GlobeAltIcon,
-  ScaleIcon,
+  BookOpenIcon,
+  ChatBubbleOvalLeftEllipsisIcon,
+  BeakerIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
   {
-    name: "Type 1 (Ethereum-equivalent)",
+    name: "Testnet compatibility",
     description:
-      "A Type 1 (Ethereum-equivalent) ZK-EVM aims for maximum compatibility. This results in a seamless developer experience.",
-    icon: ArrowPathIcon,
+      "Enables real-world testing and reduces costs by providing a free platform for testing and validating NFT transactions.",
+    icon: BeakerIcon,
   },
   {
     name: "Open source",
     description:
-      "Taiko's code is open source and available on GitHub. Free to use and modify the source code with the permissive license.",
-    icon: ScaleIcon,
+      "Maize's code is open source on GitHub, allowing free use and modification with a permissive license.",
+    icon: BookOpenIcon,
   },
   {
-    name: "Decentralized",
+    name: "Community-driven",
     description:
-      "Decentralized and permissionless nodes, proposers, and provers. Anyone can participate in Taiko.",
-    icon: GlobeAltIcon,
+      "Thriving on user feedback and contributions, Maize continuously improves based on user needs and ideas.",
+    icon: ChatBubbleOvalLeftEllipsisIcon,
   },
 ];
 
@@ -42,7 +42,7 @@ export default function FeaturesSection() {
                       />
                     </span>
                   </div>
-                  <h3 className="font-oxanium mt-8 text-lg font-semibold leading-8 tracking-tight text-neutral-900 dark:text-neutral-100">
+                  <h3 className="font-poppins mt-8 text-lg font-semibold leading-8 tracking-tight text-neutral-900 dark:text-neutral-100">
                     {feature.name}
                   </h3>
                   <p className="mt-5 text-base leading-7 text-neutral-600 dark:text-neutral-300">

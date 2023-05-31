@@ -10,7 +10,7 @@ export default function Footer() {
             <ul className="text-neutral-500 dark:text-neutral-400">
               <li className="mb-4">
                 <a
-                  href="https://mirror.xyz/labs.taiko.eth"
+                  href="https://www.cobmin.com"
                   className="hover:underline"
                   target={"_blank"}
                 >
@@ -19,27 +19,27 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <a
-                  href="https://www.notion.so/taikoxyz/Taiko-Jobs-828fd7232d2c4150a11e10c8baa910a2"
+                  href="https://maizehelpsart.notion.site/Help-Maize-9fae79236e354ced8af117b99f95ad6a"
                   className="hover:underline"
                   target={"_blank"}
                 >
-                  Careers
+                  Help Wanted
                 </a>
               </li>
               <li className="mb-4">
-                <a
+                {/* <a
                   href="https://github.com/taikoxyz/taiko-mono/tree/main/packages/branding/"
                   className="hover:underline"
                   target={"_blank"}
                 >
                   Media kit
-                </a>
+                </a> */}
               </li>
             </ul>
           </div>
           <div>
             <h2 className="mb-6 text-sm font-semibold text-neutral-500 uppercase dark:text-neutral-300 pt-3">
-              Developers
+              Creators
             </h2>
             <ul className="text-neutral-500 dark:text-neutral-400">
               <li className="mb-4">
@@ -49,7 +49,7 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <a
-                  href="https://github.com/taikoxyz"
+                  href="https://github.com/cobmin/Maize"
                   className="hover:underline"
                   target={"_blank"}
                 >
@@ -57,24 +57,24 @@ export default function Footer() {
                 </a>
               </li>
               <li className="mb-4">
-                <a
+                {/* <a
                   href="https://taikoxyz.github.io/taiko-mono/taiko-whitepaper.pdf"
                   className="hover:underline"
                   target={"_blank"}
                 >
                   Whitepaper
-                </a>
+                </a> */}
               </li>
             </ul>
           </div>
           <div>
             <h2 className="mb-6 text-sm font-semibold text-neutral-500 uppercase dark:text-neutral-300 pt-3">
-              Follow us
+              Follow on
             </h2>
             <ul className="text-neutral-500 dark:text-neutral-400">
               <li className="mb-4">
                 <a
-                  href="https://discord.gg/taikoxyz"
+                  href="https://discord.gg/gKxvUjRpvw"
                   className="hover:underline"
                   target={"_blank"}
                 >
@@ -83,7 +83,7 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <a
-                  href="https://twitter.com/taikoxyz"
+                  href="https://twitter.com/maizehelpsart"
                   className="hover:underline"
                   target={"_blank"}
                 >
@@ -92,7 +92,7 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <a
-                  href="https://www.youtube.com/@taikoxyz"
+                  href="https://www.youtube.com/@maizehelpsart"
                   className="hover:underline"
                   target={"_blank"}
                 >
@@ -103,7 +103,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-md text-center text-neutral-500 dark:text-neutral-300 bg-neutral-100 dark:bg-neutral-900 px-4 py-6">
-          © {new Date().getFullYear()} Taiko Labs
+          © {new Date().getFullYear()} Maize
         </div>
       </div>
     </footer>

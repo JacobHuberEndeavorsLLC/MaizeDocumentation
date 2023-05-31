@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        oxanium: ["var(--font-oxanium)"],
+        poppins: ["var(--font-poppins)"],
       },
     },
   },

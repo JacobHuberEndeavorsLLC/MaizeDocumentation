@@ -1,7 +1,7 @@
 {
   "index": {
     "display": "hidden",
-    "title": "Taiko",
+    "title": "Maize",
     "type": "page",
     "theme": {
       "layout": "raw"
@@ -14,7 +14,7 @@
   "blog": {
     "title": "Blog ↗",
     "type": "page",
-    "href": "https://mirror.xyz/labs.taiko.eth",
+    "href": "https://www.cobmin.com",
     "newWindow": true
   }
 }

@@ -1,14 +1,15 @@
 import "../styles.css";
-import { Oxanium } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-const oxanium = Oxanium({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-oxanium",
+  variable: "--font-poppins",
+  weight: "200"
 });
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${oxanium.variable}`}>
+    <main className={`${poppins.variable}`}>
       <Component {...pageProps} />
     </main>
   );

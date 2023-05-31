@@ -13,21 +13,18 @@ export default function Hero() {
 
       // Enlarge the TaikoGeom width on scroll
       if (window.innerWidth.valueOf() < 500) {
-        taikoGeomParent.style.width = `${
-          window.innerWidth.valueOf() * 0.91666667 + elementHeight * 9
-        }px`;
+        taikoGeomParent.style.width = `${window.innerWidth.valueOf() * 0.91666667 + elementHeight * 9
+          }px`;
 
         // Lower the TaikoGeom opacity on scroll
         // Smaller screens need a faster decrease
         if (1 - elementHeight * 0.003 >= 0) {
-          taikoGeom.style.opacity = `${
-            (1 - elementHeight * 0.003) * (1 - elementHeight * 0.003)
-          }`;
+          taikoGeom.style.opacity = `${(1 - elementHeight * 0.003) * (1 - elementHeight * 0.003)
+            }`;
         }
       } else {
-        taikoGeomParent.style.width = `${
-          window.innerWidth.valueOf() / 2 + elementHeight * 9
-        }px`;
+        taikoGeomParent.style.width = `${window.innerWidth.valueOf() / 2 + elementHeight * 9
+          }px`;
 
         // Lower the TaikoGeom opacity on scroll
         taikoGeom.style.opacity = `${1 - elementHeight / 250}`;
@@ -42,19 +39,19 @@ export default function Hero() {
         <main className="lg:relative">
           <div className="relative z-10 w-3/4 pt-16 pb-20 text-left lg:py-48">
             <div className="pl-[max(env(safe-area-inset-left),1.5rem)]">
-              <h1 className="font-oxanium text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
-                A <span className="text-[#fc0fc0]">Type 1</span> ZK-EVM
+              <h1 className="font-poppins text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
+                <span className="text-[#25a237]">NFT Management </span> made easy
               </h1>
-              <p className="font-oxanium mt-3 text-lg text-neutral-600 sm:text-xl md:mt-5 dark:text-neutral-100">
-                Decentralized, Ethereum-equivalent ZK-Rollup.
+              <p className="font-poppins mt-3 text-lg text-neutral-600 sm:text-xl md:mt-5 dark:text-neutral-100">
+                Open-Source, Community Driven
               </p>
               <div className="mt-10 flex md:justify-left">
                 <div className="inline-flex rounded-md shadow">
                   <a
                     href="/docs"
-                    className="inline-flex items-center rounded-md border border-transparent bg-[#fc0fc0] px-5 py-3 text-base font-semibold text-white dark:text-neutral-100 hover:bg-[#e30ead] hover:no-underline hover:text-white"
+                    className="inline-flex items-center rounded-md border border-transparent bg-[#25a237] px-5 py-3 text-base font-semibold text-white dark:text-neutral-100 hover:bg-[#0b8e36] hover:no-underline hover:text-white"
                   >
-                    Get started ✨
+                    Get started 🚀
                   </a>
                 </div>
               </div>
@@ -68,7 +65,7 @@ export default function Hero() {
             <img
               id="taikoGeom"
               className="absolute z-0 -right-6 overflow-visible h-full w-full object-cover max-w-none"
-              src="/images/Taiko_GEOM_1_Fluo_Sliced.svg"
+              src="/images/Taiko_GEOM_1_Fluo_Sliced.png"
               alt=""
             />
           </div>

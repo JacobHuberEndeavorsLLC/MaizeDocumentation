@@ -1,47 +1,48 @@
 const posts = [
   {
-    title: "Taiko Community Update — Q1/2023",
-    href: "https://taiko.mirror.xyz/IoEGEzlf0aJAtF31YgHHLOa5dSoetLfpIfb7lRaRiCE",
+    title: "Maize: Empowering NFT Creators with Simplified Loopring API Interactions",
+    href: "https://www.cobmin.com/posts/Maize-Empowering-NFT-Creators",
     description:
-      "Below is a summary of Taiko’s Q1 2023. Consider this Q1.5 as we’ll include updates that happened post-Q1 but before this update.",
-    date: "May 19, 2023",
-    datetime: "2023-05-19",
+      "In the fast-paced world of NFTs, efficient management and streamlined processes are crucial for creators seeking to maximize their impact.",
+    date: "May 30, 2023",
+    datetime: "2023-05-30",
     imageUrl:
-      "https://mirror-media.imgix.net/publication-images/TOXeVr7_rtitwDoja4vFR.png?height=512&width=1024&h=512&w=1024&auto=compress",
-    readingTime: "6 min",
+      "https://www.cobmin.com/_next/image?url=%2Fassets%2Fblog%2FMaize-Empowering-NFT-Creators%2FCoverImage.jpg&w=1920&q=75",
+    // readingTime: "6 min",
     author: {
-      name: "finestone",
-      imageUrl: "https://avatars.githubusercontent.com/u/36642873?v=4",
+      name: "cobmin",
+      imageUrl: "https://www.cobmin.com/assets/blog/authors/cobmin.jpg",
     },
   },
   {
-    title: "ZK-Roller-Coaster #4",
-    href: "https://taiko.mirror.xyz/OCkE3gMDKixWYC-mlX7wAqDNJaUEpm3yeDAYJygyxkg",
+    title: "Efficient Batch Minting NFTs on Loopring",
+    href: "https://www.cobmin.com/posts/Efficient-Batch-Minting-NFTs-on-Loopring",
     description:
-      "This is the 4th edition of ZK-Roller-Coaster where we track and investigate the most exciting, meaningful, and crazy ZK-stuff of the prior two weeks.",
-    date: "May 06, 2023",
-    datetime: "2023-05-06",
+      "In this tutorial, we will delve into the process of setting up and efficiently minting NFTs in batches on Loopring.",
+    date: "May 10, 2023",
+    datetime: "2023-05-10",
     imageUrl:
-      "https://mirror-media.imgix.net/publication-images/Myf4VHMd1ACmqL0jmYHWe.png?height=512&width=1024&h=512&w=1024&auto=compress",
-    readingTime: "4 min",
+      "https://www.cobmin.com/_next/image?url=%2Fassets%2Fblog%2FEfficient-Batch-Minting-NFTs-on-Loopring%2FcoverNew.jpg&w=1920&q=75",
+    // readingTime: "4 min",
     author: {
-      name: "Lisa A.",
-      imageUrl: "https://avatars.githubusercontent.com/u/106527861?v=4",
+      name: "cobmin",
+      imageUrl: "https://www.cobmin.com/assets/blog/authors/cobmin.jpg",
     },
   },
   {
-    title: "Taiko Protocol Overview",
-    href: "https://taiko.mirror.xyz/y_47kIOL5kavvBmG0zVujD2TRztMZt-xgM5d4oqp4_Y",
+    title: "Maize NFT Airdrop Competition",
+    href: "https://www.cobmin.com/posts/Maize-Nft-Airdrop-Competition",
     description:
-      "Taiko follows the “decentralized from day 1” approach. Below is the protocol description. Taiko protocol consists of three stages: block proposal, validation, and proving.",
+      "Maize is hosting an NFT airdrop competition throughout 2023. There are 39 opportunities to win. The top 3 wallet addresses of each month will win an NFT",
     date: "May 02, 2023",
     datetime: "2023-05-02",
     imageUrl:
-      "https://mirror-media.imgix.net/publication-images/o_qvD7XIAPSjiqlvvodoj.png?height=512&width=1024&h=512&w=1024&auto=compress",
-    readingTime: "6 min",
+      "https://www.cobmin.com/_next/image?url=%2Fassets%2Fblog%2FMaize-Nft-Airdrop-Competition%2FcoverNew.jpg&w=1920&q=75",
+    // readingTime: "6 min", "https://mirror-media.imgix.net/publication-images/o_qvD7XIAPSjiqlvvodoj.png?height=512&width=1024&h=512&w=1024&auto=compress",
+
     author: {
-      name: "Lisa A.",
-      imageUrl: "https://avatars.githubusercontent.com/u/106527861?v=4",
+      name: "cobmin",
+      imageUrl: "https://www.cobmin.com/assets/blog/authors/cobmin.jpg",
     },
   },
 ];
@@ -54,18 +55,18 @@ export default function BlogSection() {
       </div>
       <div className="relative mx-auto max-w-7xl">
         <div className="text-center">
-          <h2 className="font-oxanium text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl dark:text-neutral-100">
-            Latest blog posts
+          <h2 className="font-poppins text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl dark:text-neutral-100">
+            Latest Maize blog posts
           </h2>
           <div className="mx-auto mt-3 max-w-2xl text-xl text-neutral-500 sm:mt-4 dark:text-neutral-300">
-            Check out the full blog at{" "}
+            View full blog 👉{" "}
             <a
               className="underline"
-              href="https://mirror.xyz/labs.taiko.eth"
+              href="https://www.cobmin.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              taiko.mirror.xyz
+              cobmin.com
             </a>
           </div>
         </div>
@@ -107,13 +108,13 @@ export default function BlogSection() {
                       />
                     </div>
                     <div className="ml-3">
-                      <div className="text-sm font-medium text-[#fc0fc0]">
+                      <div className="text-sm font-medium text-[#25a237]">
                         {post.author.name}
                       </div>
                       <div className="flex space-x-1 text-sm text-neutral-500 dark:text-neutral-400">
                         <time dateTime={post.datetime}>{post.date}</time>
-                        <span aria-hidden="true">&middot;</span>
-                        <span>{post.readingTime} read</span>
+                        {/* <span aria-hidden="true">&middot;</span> */}
+                        {/* <span>{post.readingTime} read</span> */}
                       </div>
                     </div>
                   </div>

@@ -8,19 +8,19 @@ export default {
     key: "banner",
     text: (
       <a
-        href="https://twitter.com/taikoxyz/status/1647684931735396352"
+        href="https://github.com/cobmin/Maize/releases"
         target="_blank"
       >
-        📌 Alpha-2 has been deprecated. Alpha-3 is coming... soon 👀
+        Maize v1.0.1 is out 🌽 Download now ✅
       </a>
     ),
   },
   chat: {
-    link: "https://discord.gg/taikoxyz",
+    link: "https://discord.gg/gKxvUjRpvw",
   },
   darkMode: true,
   docsRepositoryBase:
-    "https://github.com/taikoxyz/taiko-mono/blob/main/packages/website",
+    "https://github.com/cobmin/MaizeDocumentation",
   editLink: {
     text: "Edit this page ↗",
   },
@@ -35,13 +35,13 @@ export default {
     const { frontMatter } = useConfig();
     return (
       <>
-        <meta property="og:url" content={`https://taiko.xyz${asPath}`} />
-        <meta property="og:title" content={frontMatter.title || "Taiko"} />
+        <meta property="og:url" content={`https://maizehelps.art${asPath}`} />
+        <meta property="og:title" content={frontMatter.title || "Maize"} />
         <meta
           property="og:description"
           content={
             frontMatter.description ||
-            "A decentralized, Ethereum-equivalent ZK-Rollup."
+            "An open sourced, NFT management application."
           }
         />
         <link rel="icon" href="/images/favicon.png" />
@@ -54,11 +54,11 @@ export default {
   },
   primaryHue: 315,
   project: {
-    link: "https://github.com/taikoxyz",
+    link: "https://github.com/cobmin",
   },
   useNextSeoProps() {
     return {
-      titleTemplate: "%s – Taiko",
+      titleTemplate: "%s – Maize",
     };
   },
 };
