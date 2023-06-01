@@ -9,8 +9,8 @@ function ThemedImage() {
   useEffect(() => {
     setSrc(
       resolvedTheme === "dark"
-        ? "/images/logotype-white.png"
-        : "/images/logotype-black.png"
+        ? "/images/maize_full_logo.png"
+        : "/images/maize_full_logo.png"
     );
   }, [resolvedTheme]);
 

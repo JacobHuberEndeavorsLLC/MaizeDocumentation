@@ -40,7 +40,7 @@ export default function Hero() {
           <div className="relative z-10 w-3/4 pt-16 pb-20 text-left lg:py-48">
             <div className="pl-[max(env(safe-area-inset-left),1.5rem)]">
               <h1 className="font-poppins text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
-                <span className="text-[#25a237]">NFT Management </span> made easy
+                An <span className="text-[#25a237]">NFT</span> Toolkit
               </h1>
               <p className="font-poppins mt-3 text-lg text-neutral-600 sm:text-xl md:mt-5 dark:text-neutral-100">
                 Open-Source, Community Driven
