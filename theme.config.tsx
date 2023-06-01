@@ -41,7 +41,7 @@ export default {
           property="og:description"
           content={
             frontMatter.description ||
-            "An open sourced, NFT management application."
+            "An open sourced, NFT Toolkit."
           }
         />
         <link rel="icon" href="/images/favicon.png" />
