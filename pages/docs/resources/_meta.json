@@ -1,17 +1,8 @@
 {
-  "contributing": {
-    "title": "Contributing"
-  },
   "official-links": {
     "title": "Official links"
   },
-  "talks": {
-    "title": "Talks"
-  },
-  "rollup-glossary": {
-    "title": "Rollup glossary"
-  },
-  "whitepaper": {
-    "title": "Whitepaper"
+  "contributing": {
+    "title": "Contributing"
   }
 }

@@ -28,7 +28,7 @@ export default function CareerSection() {
                 href="https://maizehelpsart.notion.site/Help-Maize-9fae79236e354ced8af117b99f95ad6a"
                 target={"_blank"}
                 rel={"noreferrer"}
-                className="inline-flex items-center justify-center w-64 md:w-72 px-4 md:px-6 py-2 md:py-3 mb-4 mx-2 text-base md:text-lg font-semibold text-white bg-[#25a237] hover:bg-[#0b8e36] dark:hover:bg-[#e30ead] rounded-md shadow-md"
+                className="inline-flex items-center justify-center w-64 md:w-72 px-4 md:px-6 py-2 md:py-3 mb-4 mx-2 text-base md:text-lg font-semibold text-white bg-[#25a237] hover:bg-[#0b8e36] dark:hover:bg-[#0b8e36] rounded-md shadow-md"
               >
                 Explore open positions &#128279;
               </a>

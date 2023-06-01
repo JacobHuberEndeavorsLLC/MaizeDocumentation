@@ -2,11 +2,8 @@
   "index": {
     "title": "Hey there 🙋‍♂️"
   },
-  "concepts": {
-    "title": "Concepts"
-  },
-  "reference": {
-    "title": "Reference"
+  "tutorials": {
+    "title": "Tutorials"
   },
   "resources": {
     "title": "Resources"

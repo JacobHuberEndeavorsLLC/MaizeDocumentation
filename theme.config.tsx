@@ -39,10 +39,7 @@ export default {
         <meta property="og:title" content={frontMatter.title || "Maize"} />
         <meta
           property="og:description"
-          content={
-            frontMatter.description ||
-            "An open sourced, NFT Toolkit."
-          }
+          content={frontMatter.description || "An open sourced, NFT Toolkit."}
         />
         <link rel="icon" href="/images/favicon.png" />
       </>
@@ -50,15 +47,15 @@ export default {
   },
   logo: <ThemedImage />,
   nextThemes: {
-    defaultTheme: "light",
+    defaultTheme: "system",
   },
-  primaryHue: 315,
+  primaryHue: { light: 107, dark: 48 },
   project: {
     link: "https://github.com/cobmin",
   },
   useNextSeoProps() {
     return {
-      titleTemplate: "%s – Maize",
+      titleTemplate: "%s - Maize",
     };
   },
 };
