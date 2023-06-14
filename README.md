@@ -1,4 +1,4 @@
-# Taiko documentation website
+# Maize documentation website
 
 ## Pre-Installation
 
