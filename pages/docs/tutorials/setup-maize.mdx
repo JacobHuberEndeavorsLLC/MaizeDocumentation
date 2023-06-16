@@ -20,7 +20,7 @@ This guide will help you setup Maize and connect to Loopring. There are two netw
 
 <Steps>
     ### Open mainnetappsettings.json
-    In your Maize folder step into Input > Environment and open the mainnetappsettings file. Set this file aside for [step 4](setup-maize#find-layer-1-key) and [step 5](setup-maize#replace-the-remaining-values).
+    In your `Maize` folder step into `Input` > `Environment` and open the `mainnetappsettings` file. Set this file aside for [step 4](setup-maize#find-layer-1-key) and [step 5](setup-maize#replace-the-remaining-values).
     
     ![mainnetappsettings.json](/images/tutorials/setupMaize/mainnetappsettings.jpg)
 
@@ -35,7 +35,7 @@ This guide will help you setup Maize and connect to Loopring. There are two netw
 
     Below I will be demonstrating with a burner wallet.
 </Callout>
-    Under Avatar > Security click Export Account and sign the transaction to view your Loopring information.
+    Under `Avatar` > `Security` click `Export Account` and sign the transaction to view your Loopring information.
     
     ![Export Account](/images/tutorials/setupMaize/ExportAccount.jpg)
 
@@ -45,20 +45,20 @@ This guide will help you setup Maize and connect to Loopring. There are two netw
     <Tabs items={['GameStop', 'MetaMask']}>
     <Tab>
         #### Open GameStop Wallet and Replace mainnetappsettings Value
-        - From the GameStop Wallet browser extension > Unlock > Avatar > Settings > Export private key > Enter your password and Confirm.
-        - Copy this value and in your mainnetappsettings file paste this value in the MMorGMEPrivateKey's value.
+        - From the GameStop Wallet browser extension > `Unlock` > `Avatar` > `Settings` > `Export private key` > Enter your password and `Confirm`.
+        - Copy this value and in your `mainnetappsettings` file paste this value in the MMorGMEPrivateKey's value.
     
-    Your mainnetappsettings file should look like the below.
+    Your `mainnetappsettings` file should look like the below.
 
     ![MMorGMEPrivateKey](/images/tutorials/setupMaize/MMorGMEPrivateKey.jpg)
  
     </Tab>
         <Tab>
         #### Open MetaMask Wallet and Replace mainnetappsettings Value
-        - From the MetaMask Wallet browser extension > Unlock > ... > Account details > Export Private Key > Enter your password and Export Private Key.
+        - From the MetaMask Wallet browser extension > `Unlock` > `...` > `Account details` > `Export Private Key` > Enter your password and `Export Private Key`.
         - Copy to clipboard and in your mainnetappsettings file paste this value in the MMorGMEPrivateKey's value.
 
-    Your mainnetappsettings file should look like the below.
+    Your `mainnetappsettings` file should look like the below.
          
          ![MMorGMEPrivateKey](/images/tutorials/setupMaize/MMorGMEPrivateKey.jpg)
     </Tab>
@@ -73,12 +73,12 @@ This guide will help you setup Maize and connect to Loopring. There are two netw
 | apiKey   | LoopringApiKey   |
 | privateKey   | LoopringPrivateKey   |
 
-    Your mainnetappsettings file should look like the below.
+    Your `mainnetappsettings` file should look like the below.
          
     ![MMorGMEPrivateKey](/images/tutorials/setupMaize/MMorGMEPrivateKeyFinal.jpg)
 
     ### Validate
-    - To make sure the setup is successful, double click on the Maize.exe in the Maize folder to launch the application.
+    - To make sure the setup is successful, double click on Maize.exe in the `Maize` folder to launch the application.
 
         ![Maize executable](/images/tutorials/setupMaize/MaizeExe.jpg)
     - choose 💎 mainnet and click ✔️
@@ -92,7 +92,7 @@ This guide will help you setup Maize and connect to Loopring. There are two netw
 
 ## Troubleshooting
 ### Windows protected your PC
-When first launching the application you might run into the screen 'Windows protected your PC'. To get past this click More Info > Run anyway.
+When first launching the application you might run into the screen 'Windows protected your PC'. To get past this click `More Info` > `Run anyway`.
 
 ### Please verify appsettings.json is correct
 After trying to connect to Maize you might recieve the below screen. If you recieve this screen then please double or triple check that your values are correct in your main/testnetappsettings.json file.
