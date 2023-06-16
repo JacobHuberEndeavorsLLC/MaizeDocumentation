@@ -1,0 +1,55 @@
+import { Callout, Steps } from "nextra-theme-docs";
+
+# Nft Info from a Wallet
+
+## Overview
+
+This guide will help you find relvant information about the NFTs in a wallet. This information consists of the NFT Name, NFT Data, NFT Id, Minter, and Collection Address. [More Info](nft-info-from-a-wallet#data-retrieved)
+
+## Prerequisites
+
+- Maize [downloaded](../download-maize) and [setup](../setup-maize).
+- A wallet address or ENS.
+
+## Steps
+
+<Steps>
+  ### Start NFT Info from a Wallet
+  Under the Lookups Section on the Maize Menu, click `NFT Info from a Wallet`.
+
+  ### Find the Address
+  - In the Wallet Address/ENS textbox, enter in the wallet address or ENS. 
+  - Click `Find`
+
+  ![cobmin.eth](/images/tutorials/nftInfoFromAWallet/cobmineth.jpg)
+
+  ### Open the Output File
+  - Once the applicaiton finishes, you can find your file in the provided directory.
+  - Open the file in excel/google docs or your favorite text editor. I use [Notepad++](https://notepad-plus-plus.org/) but for a more structured approach use excel/google.
+
+<div style={{ display: 'flex', height: '300px' }}>
+  <div style={{ flex: 1, margin: '0 10px' }}>
+    <img src="/images/tutorials/nftInfoFromAWallet/FunctionalityComplete.jpg" style={{ height: '100%', objectFit: 'contain' }} alt="Keep File" />
+  </div>
+  <div style={{ flex: 1, margin: '0 10px' }}>
+    <img src="/images/tutorials/nftInfoFromAWallet/OutputFile.jpg" style={{ height: '100%', objectFit: 'contain' }} alt="Keep File Two" />
+  </div>
+</div>
+
+  ### Data Retrieved
+| Column | Description | Example |
+|----------|----------|----------|
+| name   | Name of the NFT   | LoopQuest F2P NFT |
+| nftData   | Unique identifier of the NFT   | 0x272079ed71c192a4dea2dc429891b26083559ae24d413599fecd82efd799436d |
+| nftId   | Unique identifier of the NFT   | 0xcfd9a7ae82698da0da065befb2b39f3bfe3eca509febdb9da865fafd4d98e543 |
+| minter   | NFT Minter wallet address    | 0x6fc60be0cce2730b78ad29d732d823866c07baa0 |
+| tokenAddress   | NFT collection address   | 0x02008a82eb4eeee1110789904245c029541a09f6 |
+
+<Callout type="info" emoji="ℹ️">
+  Use NFT Data to find NFT holders and perform airdrops.
+</Callout>
+
+  ### Finish
+  You have successfully found NFT information from a users wallet! 
+  </Steps>
+
