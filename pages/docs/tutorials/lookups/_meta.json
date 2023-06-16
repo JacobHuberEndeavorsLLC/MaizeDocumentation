@@ -1,5 +1,8 @@
 {
   "nft-info-from-a-wallet": {
     "title": "Nft Info from a Wallet"
+  },
+  "nft-info-from-collection": {
+    "title": "Nft Info from Collection"
   }
 }

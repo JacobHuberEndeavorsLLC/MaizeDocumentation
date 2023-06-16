@@ -1,0 +1,62 @@
+import { Callout, Steps } from "nextra-theme-docs";
+import ImageStacking from "components/ImageStacking";
+
+# Nft Info from Collection
+
+## Overview
+
+This guide will help you find relevant information about the NFTs from a collection. This information consists of the NFT Name, NFT Description, NFT Data, NFT Id, Minter, Token Address, and NFT Properties. [More Info](nft-info-from-collection#data-retrieved)
+
+## Prerequisites
+
+- Maize [downloaded](../download-maize) and [setup](../setup-maize)
+- A collection address
+  - Possibly the collection's minter address and an NFT Id
+
+## Steps
+
+<Steps>
+  ### Start NFT Info from Collection
+  Under the Lookups Section on the Maize Menu, click `NFT Info from Collection`.
+
+  ### Enter the Collection Address
+  - In the Collection Address textbox, enter in the collection address. 
+  - Click `Find`
+
+  ![Enter Collection Address](/images/tutorials/nftInfoFromCollection/collectionAddress.jpg)
+
+  - If you are not the minter of the collection or own an NFT from the collection you will have to provide additional information.
+    - Enter in the minter's address from the collection and a an NFT Id from one of the NFTs in the collection.
+
+    - Click 'Find'
+
+    ![Enter Collection Address](/images/tutorials/nftInfoFromCollection/NftIdAndMinter.jpg)
+
+
+  ### Open the Output File
+  - Once the application finishes, you can find your file in the provided directory.
+  - Open the file in excel/google docs or your favorite text editor. I use [Notepad++](https://notepad-plus-plus.org/) but for a more structured approach use excel/google.
+<br />
+
+<ImageStacking image1="/images/tutorials/nftInfoFromCollection/Final.jpg" image2="/images/tutorials/nftInfoFromCollection/OutputFile.jpg" />
+
+
+  ### Data Retrieved
+| Column | Description | Example |
+|----------|----------|----------|
+| name | Name of the NFT | Maize Destroyer |
+| description | Description of the NFT   | Short Destroyers' Maize collaboration piece. |
+| nftData   | Unique identifier of the NFT   | 0x245d09d6f696c72063051fa84b2a75af3a68cad587c1ccf1d160133603a421bf |
+| nftId   | Unique identifier of the NFT   | 0xa6dbea3cc027e7418395ab91cc84a0d8b28a4eb15b82e3cfe9c459e6636d4d10 |
+| minter   | NFT Minter wallet address    | 0x6458CC5902D4F9e466B599E220D1663C4718625A |
+| tokenAddress   | NFT collection address   | 0x17212854ad2c5dcce2f359480c16f0f1f2bca518 |
+| properties | NFT's properties   | "Function":"Collaboration piece","Artist":"Short Destroyers","Twitter":"@shortdestroyers" |
+
+<Callout type="info" emoji="ℹ️">
+  Use NFT data to find NFT holders and perform airdrops.
+</Callout>
+
+  ### Finish
+  You have successfully found NFT information from a collection! 
+  </Steps>
+
