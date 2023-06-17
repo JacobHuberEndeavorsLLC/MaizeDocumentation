@@ -1,0 +1,58 @@
+import { Callout, Steps } from "nextra-theme-docs";
+import ImageStacking from "components/ImageStacking";
+
+# Holders from NFT Data
+
+## Overview
+
+This guide will help you find relevant information about the holders of given NFTs. This information consists of two files, NftHolderFromNftData and NftHoldersAndTotals. [More Info](holders-from-nft-data#data-retrieved)
+
+## Prerequisites
+
+- Maize [downloaded](../download-maize) and [setup](../setup-maize)
+- NFT data
+  - Find NFT data from a [wallet](nft-info-from-a-wallet) or [collection](nft-info-from-collection)
+
+## Steps
+
+<Steps>
+  ### Start `Holders from NFT Data`
+  Under the Lookups Section on the Maize Menu, click `Holders from NFT Data`.
+
+  ### Enter in NFT data
+  In the `Input` file, found in the provided directory, place your NFT data. You will have one NFT Data on each line. 
+
+  <ImageStacking image1="/images/tutorials/holdersfromnftdata/FilePath.jpg" image2="/images/tutorials/holdersfromnftdata/InputFile.jpg" />
+
+  After entering in the NFT Data and saving, click `Find`
+
+  ### Open the Output File
+  - Once the application finishes, you can find your files in the provided directory.
+  - Open the file in excel/google docs or your favorite text editor. I use [Notepad++](https://notepad-plus-plus.org/) but for a more structured approach use excel/google.
+
+<ImageStacking image1="/images/tutorials/holdersfromnftdata/Final.jpg" image2="/images/tutorials/holdersfromnftdata/FinalFiles.jpg" />
+
+
+  ### Data Retrieved
+  #### NftHolderFromNftData
+| Column | Description | Example |
+|----------|----------|----------|
+| nftData | Unique identifier of the NFT | 0x266047b1b8fd705e74f8649e7967d310aab8926f2a79963309328e5eadbe5f8c |
+| name | Name of the NFT  | FrankenLoops HD #1 |
+| nftOwner   | wallet address of the owner   | 0x37ea02537f3a7a7ffc221125245905be3d5423e6 |
+| ownerAmountOwned   | amount owned of this NFT by owner| 1 |
+
+  #### NftHoldersAndTotals
+| Column | Description | Example |
+|----------|----------|----------|
+| owner | wallet address of the NFT owner | 0x37ea02537f3a7a7ffc221125245905be3d5423e6 |
+| total | amount of NFTs owned of all given NFTs | 1 |
+
+<Callout type="info" emoji="ℹ️">
+  Use NFT holders to perform airdrops.
+</Callout>
+
+  ### Finish
+  You have successfully found NFT Holders from NFT data! 
+  </Steps>
+
