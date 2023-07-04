@@ -43,7 +43,7 @@ export default function Hero() {
                 An <span className="text-[#25a237]">NFT</span> Toolkit
               </h1>
               <p className="font-poppins mt-3 text-lg text-neutral-600 sm:text-xl md:mt-5 dark:text-neutral-100">
-                Open-Source, Community Driven
+                for creators and collectors on Loopring
               </p>
               <div className="mt-10 flex md:justify-left">
                 <div className="inline-flex rounded-md shadow">

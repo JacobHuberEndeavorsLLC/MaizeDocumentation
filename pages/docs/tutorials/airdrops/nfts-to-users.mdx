@@ -1,0 +1,84 @@
+import { Callout, Steps } from "nextra-theme-docs";
+import ImageStacking from "components/ImageStacking";
+
+# Nfts to Users
+
+## Overview
+
+This guide will help you Airdrop NFTs to Users on Loopring. You will need to provide specific information to the `Input` file.
+
+<Callout type="warning" emoji="📣">
+  Completing the airdrop will involve fees from both Loopring and Maize.
+</Callout>
+
+## Prerequisites
+
+- Maize [downloaded](../download-maize) and [setup](../setup-maize)
+- An NFT's NFT Data. [Find Here](../lookups)
+- Wallet/ENS addresses to airdrop to. [Find Here](../lookups/holders-from-nft-data)
+
+## Steps
+
+<Steps>
+  ### Start `NFTs to Users`
+  Under the Airdrops Section on the Maize Menu, click `NFTs to Users`.
+
+  ### Enter Airdrop Information
+  In the `Input` file, found in the provided directory, place your NFT Data, NFT Amount to Transfer, Wallet Address to Transfer to, Memo. Be sure to include commas inbetween each. 
+
+![Input directory](/images/tutorials/nftsToUsers/Input.jpg)
+  - You will have one instance on each line. 
+
+  Example:
+  ![Input File](/images/tutorials/nftsToUsers/InputFile.jpg)
+
+Further Information:
+| Column | Description | Example |
+|----------|----------|----------|
+| NFT Data | Unique identifier of the NFT you want to airdrop | 0x266047b1b8fd705e74f8649e7967d310aab8926f2a79963309328e5eadbe5f8c |
+| NFT Amount to Transfer | Amount of the NFT to send   | 1 |
+| Wallet Address to Transfer to   | wallet/ENS address of the NFT reciever | 0x37ea02537f3a7a7ffc221125245905be3d5423e6 |
+| Memo   | a message to send with your transaction | I used Maize to send this airdrop! |
+  ### Select Your Fees
+  - For your Loopring Fee you can select between ETH or LRC.
+  - For your Maize Fee you can select from ETH, LRC, and PEPE
+  <Callout type="warning" emoji="📣">
+  The Maize Fee is 0.001 USD per transaction converted to the selected currency.
+</Callout>
+
+![Fee Selection](/images/tutorials/nftsToUsers/FeeSelection.jpg)
+
+ - Click `Next` to check the data in your `Input` file.
+
+ ### Pay Activation Fee
+ If an address in your file does not have an active Loopring account you have the option to pay its activation fee. This will still be one transaction but the Loopring fee will be higher.
+
+  - Select the checkbox to pay the activation fee or leave it unchecked to not include these transfers.
+  
+![Activation Fee](/images/tutorials/nftsToUsers/ActivationFee.jpg)
+
+  - Click `Preview` to view a summary of the Airdrop before it begins.
+
+  ### Airdrop Overview
+  Here you will see your relevant asset balances, how many NFTs will be airdropped to how many different wallets, and the fee estimation.
+
+![Input File](/images/tutorials/nftsToUsers/Preview.jpg)
+
+  - Review the provided information, and if everything appears correct, click Start to initiate the airdrop.
+
+  ### Open the Output File
+  - Once the application finishes, you can find your file in the provided directory.
+  - Open the file in excel/google docs or your favorite text editor. I use [Notepad++](https://notepad-plus-plus.org/) but for a more structured approach use excel/google.
+
+<ImageStacking image1="/images/tutorials/nftsToUsers/Final.jpg" image2="/images/tutorials/nftsToUsers/OutputFile.jpg" />
+
+
+  ### Data Retrieved
+The Output File will provide the wallet/ens address of those that were sent their NFTs, those that were not sent their NFTs, and the Fees that occured.
+
+You can validate this information on Loopring.io under the transaction tabs.
+
+  ### Finish
+  You have successfully airdropped NFTs to Users on Loopring! 
+  </Steps>
+
