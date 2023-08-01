@@ -1,0 +1,76 @@
+import { Callout, Steps } from "nextra-theme-docs";
+import ImageStacking from "components/ImageStacking";
+
+# NFT Wallet Swap
+
+## Overview
+
+This guide will help you Transfer your NFTs from one wallet to another on Loopring. You will need to provide the desired wallet address.
+
+<Callout type="warning" emoji="📣">
+  Completing the airdrop will involve fees from both Loopring and Maize.
+</Callout>
+
+## Prerequisites
+
+- Maize [downloaded](../download-maize) and [setup](../setup-maize)
+- Address for Wallet/ENS to airdrop to. This address may or may not be active on Loopring.
+
+## Steps
+
+<Steps>
+  ### Start `NFT Wallet Swap`
+  Under the Airdrops Section on the Maize Menu, click `NFT Wallet Swap`.
+
+  ### Enter Airdrop Information
+  In the first text field, enter in the wallet address/ENS you want to transfer to. 
+
+![Input directory](/images/tutorials/nftWalletSwap/Input.jpg)
+
+  ### Select Your Fees
+  - For your Loopring Fee you can select between ETH or LRC.
+  - For your Maize Fee you can select from ETH, LRC, and PEPE
+  <Callout type="warning" emoji="📣">
+  The Maize Fee is 0.001 USD per transaction converted to the selected currency.
+</Callout>
+
+![Fee Selection](/images/tutorials/nftWalletSwap/FeeSelection.jpg)
+
+ - Click `Next` to check the data.
+
+ ### Pay Activation Fee
+ If the provided address does not have an active Loopring account you will need to pay its activation fee. This will still be one transaction but the Loopring fee will be higher.
+
+  - Select the checkbox to pay the activation fee.
+  
+![Activation Fee](/images/tutorials/nftWalletSwap/ActivationFee.jpg)
+
+  - Click `Preview` to view a summary of the Airdrop before it begins.
+
+  ### Airdrop Overview
+  Here you will see your relevant asset balances, what wallet address you are sending to, how many transfers will occur, and the fee estimation.
+
+<Callout type="warning" emoji="📣">
+  Please, please, please, double and triple check this wallet address. All NFTs will be sent to this address.
+</Callout>
+
+![Input File](/images/tutorials/nftWalletSwap/Preview.jpg)
+
+  - Review the provided information, and if everything appears correct, click `Start` to initiate the airdrop.
+
+  ### Open the Output File
+  - Once the application finishes, you can find your file in the provided directory but it should open automatically for you.
+  - Open the file in excel/google docs or your favorite text editor. I use [Notepad++](https://notepad-plus-plus.org/) but for a more structured approach use excel/google.
+
+<ImageStacking image1="/images/tutorials/nftWalletSwap/Final.jpg" image2="/images/tutorials/nftWalletSwap/OutputFile.jpg" />
+
+
+  ### Data Retrieved
+The Output File will provide the wallet/ens address of those that were sent their NFTs and the Fees that occured.
+
+You can validate this information on Loopring.io under the transaction tabs.
+
+  ### Finish
+  You have successfully performed an NFT Wallet Swap on Loopring! 
+  </Steps>
+

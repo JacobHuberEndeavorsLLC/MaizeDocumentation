@@ -1,5 +1,11 @@
 {
   "nfts-to-users": {
     "title": "NFTs to Users"
+  },
+  "crypto-to-users": {
+    "title": "Crypto to Users"
+  },
+  "nft-wallet-swap": {
+    "title": "NFT Wallet Swap"
   }
 }
