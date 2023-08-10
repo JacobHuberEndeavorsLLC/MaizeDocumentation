@@ -10,5 +10,11 @@
   },
   "airdrops": {
     "title": "🪂 Airdrops"
+  },
+  "scripting": {
+    "title": "📜 Scripting"
+  },
+  "metadata": {
+    "title": "🏷 Metadata"
   }
 }
