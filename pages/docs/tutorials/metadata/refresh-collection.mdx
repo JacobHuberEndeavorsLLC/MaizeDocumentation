@@ -1,0 +1,44 @@
+import { Callout, Steps } from "nextra-theme-docs";
+import ImageStacking from "components/ImageStacking";
+
+# Refresh Collection
+
+## Overview
+
+This guide outlines the steps to refresh your collection's metadata on Loopring. This process can be particularly useful when an NFT isn't displayed in your wallet or on an explorer.
+
+<Callout type="info" emoji="📘">
+   Note: Refreshing might help if your NFT isn't showing as expected.
+</Callout>
+
+## Requirements 📋
+
+- Maize Software: Make sure it's [downloaded](../download-maize) and [setup](../setup-maize) correctly.
+- Collection Address: Ensure you have the collection address corresponding to at least one of your NFTs.
+
+## Steps
+
+<Steps>
+  ### Initiate `Refresh Collection`
+  Navigate to the Metadata Section within the Maize Menu. Here, you'll find the Refresh Collection option. Click on it to start.
+
+  ### Input the Collection Address
+  - Populate the 'Collection Address' textbox with the correct address.
+  - Click the `Find` button.
+
+  ![Input Collection Address](/images/tutorials/refreshCollection/collectionAddress.jpg)
+
+  > If you're neither the minter nor an owner of any NFT from the collection, you'll need to provide supplementary details:
+    - Input both the minter's address and an NFT Id from the collection.
+    - After providing the necessary data, press 'Find'. The app will take a moment to process your request.
+
+    ![Provide Additional Info](/images/tutorials/refreshCollection/NftIdAndMinter.jpg)
+
+  ### Review the Result
+  Upon completion, the application will automatically open the generated file. Review its content to ensure everything is as intended. Changes to your NFT could take up to a day but my reflect in minuets.
+
+<ImageStacking image1="/images/tutorials/refreshCollection/FinalLogs.jpg" image2="/images/tutorials/refreshCollection/Final.jpg" />
+
+  ### Congratulations! 🎉
+You have successfully refreshed your collections metadata. Well done!
+  </Steps>

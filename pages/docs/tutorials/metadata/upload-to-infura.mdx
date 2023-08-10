@@ -1,0 +1,55 @@
+import { Callout, Steps } from "nextra-theme-docs";
+import ImageStacking from "components/ImageStacking";
+
+# Upload to Infura
+
+## Overview
+
+This tutorial walks you through the steps to pin your metadata and/or media files to Infura. By following this, you'll also set up your Infura account. Pinning increases the visibility of your NFTs across various platforms.
+<Callout type="info" emoji="📘">
+      **Tip**: Distributing and pinning your NFT's information in multiple locations enhances its accessibility and reliability.
+</Callout>
+
+## Requirements 📋
+
+- Maize Software: Make sure it's [downloaded](../download-maize) and [setup](../setup-maize) correctly.
+- Infura Account: [Sign up](https://app.infura.io/) for a free Infura account.
+- Metadata CIDs: Retrieve the CIDs of your collection's NFTs from this [lookup](nft-info-from-collection).
+
+## Steps
+
+<Steps>
+  ### Retrieve your Infura API Keys
+First, [log in to your Infura account](https://app.infura.io/dashboard).
+  - Click the orange 'CREATE NEW API KEY' button.
+  ![API Key Creation](/images/tutorials/uploadToInfura/CreateNewApiKey.jpg)
+  - In the subsequent modal, choose IPFS, title your project, then select 'CREATE'.
+  ![API Key Details](/images/tutorials/uploadToInfura/ModalInformation.jpg)
+  - Infura will ask for credit card details, given the potential to exceed the 5 GB free tier. Once entered, press 'CREATE API KEY'.
+Your API Key and Secret Key will be visible within your new project. Make a note of them for upcoming steps.
+
+  ### Initiate `Upload to Infura`
+  Navigate to the Metadata Section within the Maize Menu. Here, you'll find the Upload to Infura option. Click on it to start.
+
+  ### Embed your Keys
+The 'Infurasettings.json' file will pop open. Insert your API Key in place of 'Your_Infura_Api_Key', and your Secret Key for 'Your_Infura_Secret_Key'. Make sure to save the file afterward.  
+    ![Infura Settings](/images/tutorials/uploadToInfura/infurasettings.jpg)
+
+> Note: This step is a one-time process. If you need to alter your keys in the future, you'll find the file in the 'Input\Environment' directory.
+  
+  ### Enter Metadata CIDs
+In the provided large textbox, insert your metadata CIDs. Ensure you place each CID on a separate line.
+  ![Input Collection Address](/images/tutorials/uploadToInfura/CIDs.jpg)
+  ### Selection for Upload
+- Determine your upload preference: choose either 'Upload Metadata', 'Upload Media Files', or both.   
+- Once decided, click `Start` to initiate the process. The app will take a moment to process your request.
+  ![Input Collection Address](/images/tutorials/uploadToInfura/uploadSelection.jpg)
+
+  ### Review the Result
+Once the process completes, the application will auto-launch the generated file for your review. Thoroughly examine its content for accuracy. Furthermore, confirm directly within Infura that your files have successfully uploaded.
+
+  ![Review Output File](/images/tutorials/uploadToInfura/outputFile.jpg)
+
+  ### Congratulations! 🎉
+You have successfully upload your metadata to Infura. Well done!
+  </Steps>
