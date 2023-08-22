@@ -20,12 +20,12 @@ This guide will help you download Maize to your computer.
     Visit [Maize's Github](https://github.com/cobmin/Maize/releases) and find the latest release at the top of the page.
 
     ### Download the Release
-    Under the latest release's Assets, click your operating system to download the package.
-    
-    <Callout type="info" emoji="�">
+    Under the latest release's "Assets", click on `win-x64.zip` to download the package.  
+    ![Maize Folder](/images/tutorials/downloadMaize/AssetsWindows.jpg)
+
+    <Callout type="info" emoji="📘">
     Windows: win-x64 | Mac: osx-x64
     </Callout>
-    ![Assets Download](/images/tutorials/downloadMaize/AssetsWindows.jpg)
 
     ### Extract the Downloaded File
     The `win-x64.zip` folder is now in your File Explorer > Downloads. Find the folder, Right click it, and `Extract All...`.
@@ -48,13 +48,74 @@ This guide will help you download Maize to your computer.
     ### Finish
     You have successfully downloaded Maize! 
 
-</Steps>
-</Tab>
-<Tab>Basically the same as Windows but coming soon... Reach out to me if you need immediate help.</Tab>
-</Tabs>
-
-## Troubleshooting
-### After downloading the Release, it is reporting unsafe
-This project is open source and can be reviewed if needed. To get past this press Keep under the download.
+    ## Troubleshooting
+    #### After downloading the Release, it is reporting unsafe
+    This project is open source and can be reviewed if needed. To get past this press Keep under the download.
 
 <ImageStacking image1="/images/tutorials/downloadMaize/KeepFile.jpg" image2="/images/tutorials/downloadMaize/KeepFileTwo.jpg" />
+
+</Steps>
+</Tab>
+
+<Tab>
+<Steps>
+    ### Find the latest Release
+    Visit [Maize's Github](https://github.com/cobmin/Maize/releases) and find the latest release at the top of the page.
+
+    ### Download the Release
+    Under the latest release's "Assets", click on `osx-x64.zip` to download the package.
+    ![Maize Folder](/images/tutorials/downloadMaize/AssetsMac.jpg)
+
+    <Callout type="info" emoji="📘">
+    Windows: win-x64 | Mac: osx-x64
+    </Callout>
+
+    ### Unzip the Downloaded File
+    Find the `osx-x64.zip` file in _Finder_ > _Downloads_. Double click the file to unzip the folder.
+    <ImageStacking image1="/images/tutorials/downloadMaize/osxZipFolder.jpg" image2="/images/tutorials/downloadMaize/osxUnzippedFolder.jpg" />
+
+    ### Find the Maize Folder
+    Double click into the `osx-x64` folder to find the `Maize` folder.
+
+    ![Maize Folder](/images/tutorials/downloadMaize/MaizeFolderMac.jpg)
+
+    ### Store the Folder
+    You’ll find all the goodies you’ll need to run the application inside the `Maize` folder. Copy and Paste the `Maize` folder somewhere accessible. 
+    ![Maize Folder](/images/tutorials/downloadMaize/MaizeFolderInDocuments.jpg)
+    I save mine in my _Documents_.
+        
+    ### Clean Up
+    You no longer need the two folders (`osx-x64.zip` or `osx-x64`) in Downloads. Delete these to free up some space.    
+    
+    ### Finish
+    You have successfully downloaded Maize! 
+    ## Troubleshooting
+    #### Unable to run Maize
+
+    MacOS users need to run a command in *Terminal* to turn the file into an executable before being able to run the tool.
+
+    To do this, you need to open *Terminal* > move to the location where the `Maize` file is located > then run the command `chmod +x Maize`
+
+    ##### Example
+
+    Since the `Maize` file is saved in *Documents* for this example, we would: 
+
+    open *Terminal* > type `cd Documents/Maize` > press Enter > type `chmod +x Maize` > press Enter
+
+    ![Maize Folder](/images/tutorials/downloadMaize/chmod.jpg)
+
+    Once you hit enter the second time, the `Maize` file icon will change 
+
+    <ImageStacking image1="/images/tutorials/downloadMaize/MaizeFile.jpg" image2="/images/tutorials/downloadMaize/MaizeExecutable.jpg" />
+
+
+    #### After downloading the release it’s reporting unsafe
+
+    This project is open source and can be reviewed if needed. To get past this warning: right click the `Maize` executable > select *Open With* > choose *Terminal*.
+    <ImageStacking image1="/images/tutorials/downloadMaize/MaizeUnsafe.jpg" image2="/images/tutorials/downloadMaize/MaizeSafe.jpg" />
+
+</Steps>
+</Tab>
+</Tabs>
+
+
