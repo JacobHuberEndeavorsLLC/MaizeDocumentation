@@ -11,7 +11,7 @@ export default {
         href="https://github.com/cobmin/Maize/releases"
         target="_blank"
       >
-        Maize v1.1.8 is out 🌽 Download now ✅
+        Maize v1.3.0 is out 🌽 Download now ✅
       </a>
     ),
   },
