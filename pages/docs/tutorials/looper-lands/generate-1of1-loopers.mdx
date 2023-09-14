@@ -53,7 +53,7 @@ You have successfully generated 1/1 Loopers for Looper Lands. Well done!
 
 </Steps>
 
-## Folder and File Setup
+# Folder and File Setup
 
 The organization of folders and file names dictates how sprites are stacked, what data is included in metadata, and the maximum allowable percentage of each sprite, if applicable.
 
@@ -61,7 +61,7 @@ The organization of folders and file names dictates how sprites are stacked, wha
 FYI: Anywhere an underscore is used a space will replace it when necessary.
 </Callout>
 
-### Main Folder structure
+## Main Folder structure
 
 In your base directory, you should create folders that are prefixed with a number followed by an underscore (e.g., 0_background, 2_clothes). The purpose and contents of these folders are elaborated below.
 
@@ -69,30 +69,30 @@ The application selects a random sprite from each folder and stacks them in asce
 
 ![Folder Structure](/images/tutorials/generate1of1Loopers/folderStructure.png)
 
-### Metadata File Structure
+## Metadata File Structure
 Both the folder names and file names inform the properties and attributes of metadata. While the discussion below focuses on properties, the same principles apply to attributes.
 
-#### Basic
+### Basic
 
 In a straightforward setup, the folder name acts as the metadata Key, while the file name becomes its corresponding Value. For instance, in a folder named 0_background, a file named greenlight.png would result in a metadata key-value pair of "Background: GreenLight."
 <ImageStacking image1="/images/tutorials/generate1of1Loopers/basicFileSetup.png" image2="/images/tutorials/generate1of1Loopers/basicMetadata.png" />
 
-#### Advanced Folder Naming
+### Advanced Folder Naming
 When you need to select either one or multiple sprites from a set, use an ampersand (&) at the end of folder names that are meant to be considered together. For example, a folder named 2_clothes could contain a folder named outfit, clothes_top&, and clothes_bottom&. In this instance either 1 outfit will be chosen or 1 clothes top and 1 clothes bottom.
 
 The metadata will not show clothes in this instance but outfit or clothes bottom and clothes top as the Key(s) with the respective file name inside as the Value.
 
 ![Advanced Folder](/images/tutorials/generate1of1Loopers/advancedFolder.png)
 
-#### Advanced File Naming
+### Advanced File Naming
 File names can also carry special symbols to influence sprite selection, expand metadata, or control their maximum occurrence percentage.
 
-##### Maximum Occurrence
+#### Maximum Occurrence
 To set a maximum occurrence percentage for a sprite, prepend the file name with X#N, where N is the maximum percentage allowed. For example, X#5_SunsetRoseBlush.png will appear in no more than 5% of the iterations.
 
 ![Maximum Occurrence](/images/tutorials/generate1of1Loopers/maxPercentage.png)
 
-##### Metadata Expansion
+#### Metadata Expansion
 File names can also include additional metadata using the - and + symbols. For example, the file Bob-Hair_Color+Black.png will result in two metadata entries: one for "Hairstyle: Bob" and another for "Hair Color: Black."
 
 ![Expanding Metadata](/images/tutorials/generate1of1Loopers/expandingMetadata.png)
