@@ -19,5 +19,8 @@
   },
   "one-of-one-creation": {
     "title": "🤖 1/1 Creation"
+  },
+  "minting": {
+    "title": "🖼️ Minting"
   }
 }
