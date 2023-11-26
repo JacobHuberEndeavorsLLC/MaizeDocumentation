@@ -14,7 +14,7 @@ Important: Make sure to verify the authenticity of your NFTs and metadata before
 ## Requirements 📋
 
 - Maize Software: Make sure it's [downloaded](../download-maize) and [setup](../setup-maize) correctly.
-- Owning a [Maize Premium Access](https://loopexchange.art/collection/maize-access/item/0x6692d7a147762ce9335746c7b062576ef9834500f5546a29c724c55752f668c7)
+- Owning [Maize Premium Access](https://loopexchange.art/collection/maize-access/item/0x6692d7a147762ce9335746c7b062576ef9834500f5546a29c724c55752f668c7)
 - Folders and files [setup](generate-one-of-one-nfts#folder-and-file-setup)
 
 ## Steps
@@ -31,9 +31,9 @@ Important: Make sure to verify the authenticity of your NFTs and metadata before
 | Field | Description | Example |
 |----------|----------|----------|
 | NFT Name | Base name for the NFTs | Alpha CobLoopers |
-| NFT Description | Description for each NFT | Alpha CobLoopers provide acces to Alpha Fields! |
+| NFT Description | Description for each NFT | Alpha CobLoopers provide access to Alpha Fields! |
 | Collection Address | Blockchain Address for the collection | 0xa6a1de23cfe7a2cbd9d3c63d53efd263426bc8ed |
-| Royalty Percentage | Percentage of royalties on sales (1-5%) | 5 |
+| Royalty Percentage | Percentage of royalties on sales (1-10%) | 5 |
 | Iterations | Number of 1/1s to create | 10 |
 | Input Directory | Sprite's folder location | C:\cobmin\LL_Ready |
 
@@ -50,14 +50,16 @@ Once all information has been populated click the `Process` button.
   ### Congratulations! 🎉
 You have successfully generated 1/1 NFTs. Well done!
 
+Now its time to [Mint](../minting/bulk-minting)!
+
 </Steps>
 
-## Folder and File Setup
+# Folder and File Setup
 
 The organization of folders and file names dictates how sprites are stacked, what data is included in metadata, and the maximum allowable percentage of each sprite, if applicable.
 
 <Callout type="info" emoji="📘">
-FYI: Anywhere an underscore is used a space will replace it when necessary.
+FYI: Anywhere an underscore is used a space will replace it when necessary. In file and folder names, best practice is to use an underscore in place of a space.
 </Callout>
 
 ### Main Folder structure
@@ -69,14 +71,16 @@ The application selects a random sprite from each folder and stacks them in asce
 ![Folder Structure](/images/tutorials/generate1of1Loopers/folderStructure.png)
 
 ### Metadata File Structure
+
 Both the folder names and file names inform the properties and attributes of metadata. While the discussion below focuses on properties, the same principles apply to attributes.
 
 #### Basic
 
-In a straightforward setup, the folder name acts as the metadata Key, while the file name becomes its corresponding Value. For instance, in a folder named 0_background, a file named greenlight.png would result in a metadata key-value pair of "Background: GreenLight."
+In a straightforward setup, the folder name acts as the metadata Key, while the file name becomes its corresponding Value. For instance, in a folder named 0_background, a file named greenlight.png would result in a metadata key-value pair of "background: greenlight."
 <ImageStacking image1="/images/tutorials/generate1of1Loopers/basicFileSetup.png" image2="/images/tutorials/generate1of1Loopers/basicMetadata.png" />
 
 #### Advanced Folder Naming
+
 When you need to select either one or multiple sprites from a set, use an ampersand (&) at the end of folder names that are meant to be considered together. For example, a folder named 2_clothes could contain a folder named outfit, clothes_top&, and clothes_bottom&. In this instance either 1 outfit will be chosen or 1 clothes top and 1 clothes bottom.
 
 The metadata will not show clothes in this instance but outfit or clothes bottom and clothes top as the Key(s) with the respective file name inside as the Value.
@@ -84,14 +88,23 @@ The metadata will not show clothes in this instance but outfit or clothes bottom
 ![Advanced Folder](/images/tutorials/generate1of1Loopers/advancedFolder.png)
 
 #### Advanced File Naming
+
 File names can also carry special symbols to influence sprite selection, expand metadata, or control their maximum occurrence percentage.
 
 ##### Maximum Occurrence
+
 To set a maximum occurrence percentage for a sprite, prepend the file name with X#N, where N is the maximum percentage allowed. For example, X#5_SunsetRoseBlush.png will appear in no more than 5% of the iterations.
 
 ![Maximum Occurrence](/images/tutorials/generate1of1Loopers/maxPercentage.png)
 
+##### Excluding Directories from Maize Rarity Calculations
+
+There may be instances where you want to exclude an entire directory from contributing to the uniqueness calculation of an NFT. This can be particularly useful for elements that are foundational but not distinct, such as backgrounds. To achieve this, insert an exclamation mark (!) between the directory number and the underscore. For instance, `0!_background` would exclude the "background" directory from the rarity computation, ensuring it doesn't affect the uniqueness of each NFT.
+
+![Exclude background Directory with 0!_background](/images/tutorials/generate1of1Loopers/ExcludeBackgrounds.png)
+
 ##### Metadata Expansion
+
 File names can also include additional metadata using the - and + symbols. For example, the file Bob-Hair_Color+Black.png will result in two metadata entries: one for "Hairstyle: Bob" and another for "Hair Color: Black."
 
 ![Expanding Metadata](/images/tutorials/generate1of1Loopers/expandingMetadata.png)
