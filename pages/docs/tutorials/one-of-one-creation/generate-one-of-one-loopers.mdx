@@ -56,9 +56,38 @@ Once all information has been populated click the `Process` button.
 </Tab>
 <Tab>
 
-- If your NFTs are already minted then click the `NFTs already Created` button.
+If your NFTs are already minted then click the `NFTs already Created` button.
 
-...currently being worked on.
+- Upon selection, a CSV template will be provided for you to fill out. This template requires specific details about each NFT for which you wish to generate sprites. You can easily retrieve this information by utilizing the [NFT Info From Collection](../lookups/nft-info-from-collection) feature.
+
+The CSV template will include the following columns:
+
+| Field | Description | Example |
+|----------|----------|----------|
+| name | The base name of your NFT | regen #1 |
+| nftId | The unique identifier for the NFT | 0x0c4f9...7c14f |
+| nftCid | The Content Identifier (CID) for the NFT's image | QmNrnz...mrKNMA |
+| properties | Attributes derived from the NFT's metadata | `{"background":"#bde0fe","bones":"fine silver", ...}` |
+
+Please ensure all fields are accurately filled to facilitate the sprite generation process.
+
+- Save and close the CSV file. 
+
+- Choose the LooperLand's Item you are creating and populate the Project Name, Collection Address, Royalty Percentage, and Input Directory. The chart below provides additional information on each. 
+
+| Field | Description | Example |
+|----------|----------|----------|
+| Project Name | LooperLand's Project Name | Cobs Farm |
+| Collection Address | Blockchain Address for the collection | 0xa6a1de23cfe7a2cbd9d3c63d53efd263426bc8ed |
+| Royalty Percentage | Percentage of royalties on sales (1-10%) | 5 |
+| Input Directory | Sprite's folder location | C:\cobmin\LL_Ready |
+
+### Process the sprites
+
+Once all information has been populated click the `Process` button.
+
+- This will create all sprites from the provided NFTs. Find the ReadMeForNextSteps.txt and follow the instructions.
+
 </Tab>
 </Tabs>
 
@@ -67,6 +96,11 @@ Once all information has been populated click the `Process` button.
 Upon completion, the application will automatically open the folder with the generated assets. Review content to ensure everything is as intended. Feel free to change the metadata as needed.
 
 <ImageStacking image1="/images/tutorials/generate1of1Loopers/fileIterations.png" image2="/images/tutorials/generate1of1Loopers/iterationFiles.png" />
+
+
+<Callout type="info" emoji="📘">
+    FYI Original files are never modified or deleted so feel free to test without worry. However, backups are always recommended.
+</Callout>
 
 ### Congratulations! 🎉
 
@@ -130,7 +164,3 @@ There may be instances where you want to exclude an entire directory from contri
 File names can also include additional metadata using the - and + symbols. For example, the file Bob-Hair_Color+Black.png will result in two metadata entries: one for "Hairstyle: Bob" and another for "Hair Color: Black."
 
 ![Expanding Metadata](/images/tutorials/generate1of1Loopers/expandingMetadata.png)
-
-<Callout type="info" emoji="📘">
-    FYI Original files are never modified or deleted so feel free to test without worry. However, backups are always recommended.
-</Callout>
