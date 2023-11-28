@@ -11,7 +11,7 @@ export default {
         href="https://github.com/cobmin/Maize/releases"
         target="_blank"
       >
-        Maize v1.11.0 is out 🌽 Download now ✅
+        Maize v1.11.3 is out 🌽 Download now ✅
       </a>
     ),
   },
@@ -41,6 +41,14 @@ export default {
           property="og:description"
           content={frontMatter.description || "An open sourced, NFT Toolkit."}
         />
+        <meta name="description" content={frontMatter.description || 'An open sourced, NFT Toolkit.'} />
+        <meta property="og:image" content="https://github.com/cobmin/Maize/assets/97369738/4db3a21f-11aa-4cb6-8214-aa5655332c1f" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="%s - Maize" />
+        <meta name="twitter:description" content={frontMatter.description || 'An open sourced, NFT Toolkit.'} />
+        <meta name="twitter:image" content="https://github.com/cobmin/Maize/assets/97369738/4db3a21f-11aa-4cb6-8214-aa5655332c1f" />
+        <meta name="twitter:site" content="@cobmin" />
         <link rel="icon" href="/images/favicon.png" />
       </>
     );
