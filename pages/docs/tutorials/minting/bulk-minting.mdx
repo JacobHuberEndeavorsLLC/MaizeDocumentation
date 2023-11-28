@@ -5,65 +5,79 @@ import ImageStacking from "components/ImageStacking";
 
 ## Overview
 
-This guide outlines the steps to setup your media files and metadata and then mint as NFTs on Loopring. This process can be particularly useful when you have many NFTs that you need to mint at once and want free storage.
+Discover the streamlined process for minting multiple NFTs on Loopring. Ideal for large collections, this guide helps you prepare your media files and metadata for efficient bulk minting.
 
 <Callout type="warning" emoji="📣">
-  Completing the airdrop will involve fees from both Loopring and Maize.
+Minting incurs fees from both Loopring and Maize. Plan accordingly.
 </Callout>
 
 ## Requirements 📋
 
-- Maize Software: Make sure it's [downloaded](../download-maize) and [setup](../setup-maize) correctly.
-- Metadatas and NFTs folder (See 1/1 Generation[1/1 Generation](../one-of-one-creation))
-- Optional Animations folder
+- Maize Software: Ensure you've [downloaded](../download-maize) and [set up Maize](../setup-maize) properly.
+- Media and Metadata: Organize your assets in the Metadatas and NFTs folder. Refer to [1/1 Generation](../one-of-one-creation) for guidance.
+- Animations (Optional): Prepare an Animations folder if needed. 
 
-## Steps
+## Minting Steps
+
+Follow these sequential steps to mint your NFTs in bulk:
 
 <Steps>
 
     ### Initiate `Bulk Minting` 
 
-    Navigate to the Minting Section within the Maize Menu. Here, you'll find the 'Bulk Minting' option. Click on it to start.
-    
+Within Maize's minting section, select 'Bulk Minting' to begin.
+
   ### Input General Information
 
-Select the collection you want to mint to, Loopring Fee (in ETH or LRC), Maize Fee (in ETH, LRC, or PEPE), and the path to your Metadatas and NFTs folder (optional Animations folder).
+Specify your collection, minting fees (in ETH or LRC), and the directory path for your Metadatas and NFTs. If applicable, include the Animations folder.
 
-  ![Ipfs Step One](/images/tutorials/mintingToIpfs/IpfsStepOne.png)
-  <ImageStacking image1="/images/tutorials/mintingToIpfs/IpfsStepTwo.png" image2="/images/tutorials/mintingToIpfs/IpfsStepThree.png" />
+  ![Bulk Minting Screen](/images/tutorials/bulkMinting/mintScreen.png)
 
-  - Copy the generated CID and paste it into Maize.
+  - Click the `Check` button.
 
-  #### Select Your Fees
-  - For your Loopring Fee you can select between ETH or LRC.
-  - For your Maize Fee you can select from ETH, LRC, and PEPE
-  <Callout type="warning" emoji="📣">
-  The Maize Fee is 0.001 USD per transaction converted to the selected currency.
-  </Callout>
+<Tabs items={['Standard', 'Looper Lands']}>
+<Tab>
 
-  #### Metadatas and NFTs Folder path
-- Click Browse and select your Metadatas and NFTs folder. Verify the authenticity of your metadata. 
-  ![Select Root Directory](/images/tutorials/mintingToIpfs/SelectRootDirectory.png)
-<Callout type="info" emoji="📘">
-Incorrect or corrupt metadata can result in unusable or misleading NFTs.
-</Callout>
-- Click Preview to review your entries.
+</Tab>
 
-  ![Step One Done](/images/tutorials/mintingToIpfs/StepOneDone.png)
+<Tab>
 
-### Input Metadata Information
-Repeat the steps from the 'Input General Information' section but for the Metadatas Folder CID.
+### Looper Lands Information
 
-#### Select NFT Amount
-- Choose the number of NFTs to mint per type (between 1 and 100,000).  
-- Click Mint.
+Since your directory contained a BulkUpload folder it assumes this is a Looper Lands mint. 
 
-![Step Two Done](/images/tutorials/mintingToIpfs/StepTwoDone.png)
+- Enter in your Looper Land's Project name and select what Looper Lands Item you are minting.
+- Check the fees at the bottom before proceeding.
 
-### Review the Results
-- The application will auto-open an audit file. Confirm that everything is accurate and review the data on Loopring.io.
+  ![Step One Done](/images/tutorials/bulkMinting/looperLands.png)
 
-![Audit File](/images/tutorials/mintingToIpfs/Audit.png)
-  ### Congratulations! 🎉
-You have successfully minted NFTs on Loopring!
+  - Click the `Preview` button.
+
+</Tab>
+</Tabs>
+
+### Select NFT Amount
+- Choose the number of NFTs to mint for each file (between 1 and 100,000).
+
+### Select Royalty Address (Optional)
+- Distribute royalties by entering addresses, separated by commas.
+
+### Mint
+- Check the fees at the bottom before proceeding.
+- Click `Mint`.
+
+### Final Review
+
+- Inspect the audit file that Maize auto-generates and cross-verify on Loopring.io.
+
+![Audit File](/images/tutorials/bulkMinting/Audit.png)
+
+  ### Completion
+
+Congratulations on successfully minting your NFTs on Loopring using Maize 🎉
+
+    <Callout type="info" emoji="📘">
+    Regularly back up your data and stay updated with the latest Maize releases for an optimal minting experience.
+    </Callout>
+
 </Steps>
