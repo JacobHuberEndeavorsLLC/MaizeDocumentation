@@ -49,7 +49,7 @@ export default function Hero() {
                 <div className="inline-flex rounded-md shadow">
                   <a
                     href="/docs"
-                    className="inline-flex items-center rounded-md border border-transparent bg-[#25a237] px-5 py-3 text-base font-semibold text-white dark:text-neutral-100 hover:bg-[#0b8e36] hover:no-underline hover:text-white"
+                    className="inline-flex items-center rounded-md border border-transparent bg-[#21a238] px-5 py-3 text-base font-semibold text-white dark:text-neutral-100 hover:bg-[#0b8e36] hover:no-underline hover:text-white"
                   >
                     Get started 🚀
                   </a>

@@ -8,9 +8,8 @@ This guide will help you setup Maize and connect to Loopring. There are two netw
 
 ## Requirements 📋
 
-- Ensure that you have an active [Loopring account](https://loopring.io/#/trade/lite/LRC-ETH). 
-    - For full functionality, use a GameStop or MetaMask wallet. While the Loopring wallet will work, please note that airdrops are currently not supported.
-- Maize [downloaded](download-maize) to your computer.
+- Maize Software [downloaded](../download-maize)
+- Ensure that you have an active [Loopring account](https://loopring.io/#/trade/lite/LRC-ETH).
 
    <Callout type="warning">
    Use a newer wallet to be safe. Don't reveal the private keys of a wallet with significant value!
@@ -19,71 +18,88 @@ This guide will help you setup Maize and connect to Loopring. There are two netw
 ## Steps
 
 <Steps>
-    ### Open mainnetappsettings.json
-    In your `Maize` folder step into `Input` > `Environment` and open the `mainnetappsettings` file. Set this file aside for [step 4](setup-maize#find-layer-1-key) and [step 5](setup-maize#replace-the-remaining-values).
-    
-    ![mainnetappsettings.json](/images/tutorials/setupMaize/mainnetappsettings.jpg)
+
+    ### Open Maize
+
+    - Open Maize after [downloading](../download-maize) 
+    - Click the 'Create Account' button.
+
+    ![Maize executable](/images/tutorials/setupMaize/MaizeExe.jpg)
 
     ### Connect wallet to Loopring
+
     Visit [Loopring](https://loopring.io/#/trade/lite/LRC-ETH) and connect your wallet. Be sure to be connected to the Ethereum Mainnet.
 
     ### Find Loopring Information
+
     <Callout type="warning" emoji="📣">
     **Warning: Protect Your API Keys!**
 
 Protect your API keys. They grant sensitive access. Keep them confidential and avoid sharing them publicly, including in screenshots or code samples.
-
-    Below I will be demonstrating with a burner wallet.
 </Callout>
-    Under `Avatar` > `Security` click `Export Account` and sign the transaction to view your Loopring information.
+    - Under `Avatar` > `Security` click `Export Account` and sign the transaction to view your Loopring information.
     
     ![Export Account](/images/tutorials/setupMaize/ExportAccount.jpg)
 
-    Set this aside for [Step 5](setup-maize#replace-the-remaining-values).
+    - Copy this information and paste it into Maize. 
 
-    ### Find Layer 1 Key
-    <Tabs items={['GameStop', 'MetaMask']}>
+    ### Additional Information
+    <Tabs items={['Loopring', 'Loopring (No L1)', 'MetaMask']}>
     <Tab>
-        #### Open GameStop Wallet and Replace mainnetappsettings Value
-        - From the GameStop Wallet browser extension > `Unlock` > `Avatar` > `Settings` > `Export private key` > Enter your password and `Confirm`.
-        - Copy this value and in your `mainnetappsettings` file paste this value in the MMorGMEPrivateKey's value.
-    
-    Your `mainnetappsettings` file should look like the below.
-
-    ![MMorGMEPrivateKey](/images/tutorials/setupMaize/MMorGMEPrivateKey.jpg)
+<div class="aspect-w-16 aspect-h-9">
+  <video class="w-full h-auto" controls>
+    <source src="/images/tutorials/setupMaize/SetupMaizeWithL1ActiveLoopringSmartWallet.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
  
     </Tab>
-        <Tab>
-        #### Open MetaMask Wallet and Replace mainnetappsettings Value
-        - From the MetaMask Wallet browser extension > `Unlock` > `...` > `Account details` > `Export Private Key` > Enter your password and `Export Private Key`.
-        - Copy to clipboard and in your mainnetappsettings file paste this value in the MMorGMEPrivateKey's value.
+    <Tab>
+<div class="aspect-w-16 aspect-h-9">
+  <video class="w-full h-auto" controls>
+    <source src="/images/tutorials/setupMaize/SetupMaizeWithLoopringSmartWallet.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+ 
+    </Tab>
+    <Tab>
 
-    Your `mainnetappsettings` file should look like the below.
-         
-         ![MMorGMEPrivateKey](/images/tutorials/setupMaize/MMorGMEPrivateKey.jpg)
+<div class="aspect-w-16 aspect-h-9">
+  <video class="w-full h-auto" controls>
+    <source src="/images/tutorials/setupMaize/SetupMaizeWithMetaMask.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+        #### Open MetaMask Wallet 
+
+        - From the MetaMask Wallet browser extension > `Unlock` > `...` > `Account details` > `Export Private Key` > Enter your password and `Export Private Key`.
+        - Copy to clipboard and paste this into the L1 textbox.
+
     </Tab>
     </Tabs>
 
-    ### Replace the Remaining Values
-    Take specific information from the Export Account screen in Loopring.io and place it in your mainnetappsettings file. The table below displays the Keys that correlate with eachother.
-| Export Account | mainnetappsettings |
-|----------|----------|
-| address   | LoopringAddress   |
-| accountId   | LoopringAccountId   |
-| apiKey   | LoopringApiKey   |
-| privateKey   | LoopringPrivateKey   |
+    ### Maize Account Password
 
-    Your `mainnetappsettings` file should look like the below.
-         
-    ![MMorGMEPrivateKey](/images/tutorials/setupMaize/MMorGMEPrivateKeyFinal.jpg)
+    - Enter in a password for enhanced security.
+
+<div class="aspect-w-16 aspect-h-9">
+  <video class="w-full h-auto" controls>
+    <source src="/images/tutorials/setupMaize/MaizeAccountManagementAndSecurity.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 
     ### Validate
-    - To make sure the setup is successful, double click on Maize.exe in the `Maize` folder to launch the application.
 
-        ![Maize executable](/images/tutorials/setupMaize/MaizeExe.jpg)
-    - choose 💎 mainnet and click ✔️
+    - To make sure the setup is successful, select your wallet and enter in your password to log in. 
+
+    - click ✔️
 
     ### Finish
+
     If you see the Maize Menu with all of its functionalities then you have successfully setup Maize on the Ethereum Mainnet! 
     
     To setup Maize on the Ethereum Testnet (Goerli), follow the same steps but be sure to connect to Goerli in your wallet.  
@@ -93,8 +109,3 @@ Protect your API keys. They grant sensitive access. Keep them confidential and a
 ## Troubleshooting
 ### Windows protected your PC
 When first launching the application you might run into the screen 'Windows protected your PC'. To get past this click `More Info` > `Run anyway`.
-
-### Please verify appsettings.json is correct
-After trying to connect to Maize you might recieve the below screen. If you recieve this screen then please double or triple check that your values are correct in your main/testnetappsettings.json file.
-
-![Maize executable](/images/tutorials/setupMaize/Verify.jpg)

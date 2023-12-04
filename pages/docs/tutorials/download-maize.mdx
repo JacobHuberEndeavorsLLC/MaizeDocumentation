@@ -1,5 +1,7 @@
 import { Callout, Steps, Tab, Tabs } from "nextra-theme-docs";
 import ImageStacking from "components/ImageStacking";
+import DownloadSection from 'components/DownloadSection';
+
 
 # Download Maize
 
@@ -16,26 +18,23 @@ This guide will help you download Maize to your computer.
 <Tabs items={['Windows', 'Mac']}>
 <Tab>
 <Steps>
-    ### Find the latest Release
-    Visit [Maize's Github](https://github.com/cobmin/Maize/releases) and find the latest release at the top of the page.
 
-    ### Download the Release
-    Under the latest release's "Assets", click on `win-x64.zip` to download the package.  
-    ![Maize Folder](/images/tutorials/downloadMaize/AssetsWindows.jpg)
+    ### Download the latest release
 
-    <Callout type="info" emoji="📘">
-    Windows: win-x64 | Mac: osx-x64
-    </Callout>
+    <DownloadSection showMacOS={false} showWindows={true} />
 
     ### Extract the Downloaded File
+
     The `win-x64.zip` folder is now in your File Explorer > Downloads. Find the folder, Right click it, and `Extract All...`.
 
     ### Find the Maize Folder
+
     Click into the `win-x64` folder until you find the `Maize` folder.
 
     ![Maize Folder](/images/tutorials/downloadMaize/MaizeFolder.jpg)
 
     ### Store the Folder
+
     Inside the `Maize` folder are all the goodies you need to run the application. Copy and Paste this folder somewhere accessible. 
     
     I place mine in my `things` folder on my desktop.
@@ -43,6 +42,7 @@ This guide will help you download Maize to your computer.
     ![Maize Desktop](/images/tutorials/downloadMaize/MaizeDesktop.jpg)
     
     ### Clean Up
+
     You no longer need the two folders (`win-x64.zip` and `win-x64`) in your Downloads directory. Feel free to delete these to free up some space.
     
     ### Finish
@@ -59,37 +59,37 @@ This guide will help you download Maize to your computer.
 
 <Tab>
 <Steps>
-    ### Find the latest Release
-    Visit [Maize's Github](https://github.com/cobmin/Maize/releases) and find the latest release at the top of the page.
+        ### Download the latest release
 
-    ### Download the Release
-    Under the latest release's "Assets", click on `osx-x64.zip` to download the package.
-    ![Maize Folder](/images/tutorials/downloadMaize/AssetsMac.jpg)
-
-    <Callout type="info" emoji="📘">
-    Windows: win-x64 | Mac: osx-x64
-    </Callout>
+    <DownloadSection showMacOS={true} showWindows={false} />
 
     ### Unzip the Downloaded File
+
     Find the `osx-x64.zip` file in _Finder_ > _Downloads_. Double click the file to unzip the folder.
     <ImageStacking image1="/images/tutorials/downloadMaize/osxZipFolder.jpg" image2="/images/tutorials/downloadMaize/osxUnzippedFolder.jpg" />
 
     ### Find the Maize Folder
+
     Double click into the `osx-x64` folder to find the `Maize` folder.
 
     ![Maize Folder](/images/tutorials/downloadMaize/MaizeFolderMac.jpg)
 
     ### Store the Folder
+
     You’ll find all the goodies you’ll need to run the application inside the `Maize` folder. Copy and Paste the `Maize` folder somewhere accessible. 
     ![Maize Folder](/images/tutorials/downloadMaize/MaizeFolderInDocuments.jpg)
     I save mine in my _Documents_.
         
     ### Clean Up
+
     You no longer need the two folders (`osx-x64.zip` or `osx-x64`) in Downloads. Delete these to free up some space.    
     
     ### Finish
+
     You have successfully downloaded Maize! 
+
     ## Troubleshooting
+
     #### Unable to run Maize
 
     MacOS users need to run a command in *Terminal* to turn the file into an executable before being able to run the tool.
