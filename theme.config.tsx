@@ -4,17 +4,17 @@ import Footer from "./components/Footer";
 import ThemedImage from "./components/ThemedImage";
 
 export default {
-  banner: {
-    key: "banner",
-    text: (
-      <a
-        href="https://github.com/cobmin/Maize/releases"
-        target="_blank"
-      >
-        Maize v1.11.3 is out 🌽 Download now ✅
-      </a>
-    ),
-  },
+  // banner: {
+  //   key: "banner",
+  //   text: (
+  //     <a
+  //       href="https://github.com/cobmin/Maize/releases"
+  //       target="_blank"
+  //     >
+  //       Maize v1.11.3 is out 🌽 Download now ✅
+  //     </a>
+  //   ),
+  // },
   chat: {
     link: "https://discord.gg/gKxvUjRpvw",
   },
