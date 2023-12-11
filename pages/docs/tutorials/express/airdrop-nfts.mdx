@@ -1,0 +1,82 @@
+import { Callout, Steps } from "nextra-theme-docs";
+import ImageStacking from "components/ImageStacking";
+
+# Airdrop NFTs
+
+## Overview
+
+This guide will help you airdrop NFTs to Users on Loopring.
+
+<Callout type="info" emoji="📘">
+  Completing the airdrop will involve fees from both Loopring and Maize.
+</Callout>
+
+## Requirements 📋
+
+- Maize [downloaded](../download-maize) and [setup](../setup-maize)
+- An NFT's NFT Data. [Find Here](../lookups)
+- Wallet/ENS addresses to airdrop to. [Find Here](../lookups/holders-from-nft-data)
+
+## Steps
+
+<Steps>
+
+### Accessing the Airdrop Feature
+
+Navigate to the Express section within the Maize application and select the `Airdrop NFTs` feature.
+
+### Inputting Data for Airdrop
+
+Enter the NFT data and wallet addresses into the corresponding fields in the application. If you have the `Randomize` option selected, the pairing of NFT data and wallet addresses will be randomized. Otherwise, each line of NFT data will be paired with the corresponding line of wallet addresses.
+
+![NFT Airdrop Main Screen](/images/tutorials/airdropNfts/mainScreen.png)
+
+- **NFT Data**: Unique identifier for the NFT on Loopring.
+- **Wallet Addresses**: Addresses of the recipients.
+- **Memo**: Any additional information you want to attach to each airdrop.
+- **Randomize**: Randomly pair NFT data with wallet addresses.
+- **Loopring and Maize Fee**: Select the appropriate fees for the transaction.
+  
+<Callout type="warning" emoji="💡">
+Ensure that you enter an equal number of NFT data lines and wallet addresses to match them correctly for the airdrop.
+</Callout>
+
+### Fee Estimation
+
+Upon entering the required data and selecting the fees, the application will provide an estimate of the transfer fees. 
+
+- **Duplicate Lines**: If there are duplicate lines of NFT data and wallet addresses, the application will adjust the amount for a single transaction to avoid multiple transactions for the same pair.
+
+### Starting the Airdrop
+
+![NFT Airdrop Information filled out](/images/tutorials/airdropNfts/completed.png)
+
+Review all the information you have entered. Once you're ready, click the `Start` button to initiate the airdrop process. The application will process the airdrop and provide a report upon completion.
+
+### Completion and Reporting
+
+After the transfer is complete, a summary report will be displayed. For a detailed report, a CSV file will be generated. This file includes an overview of the transfer, detailing the wallet addresses that received NFTs, those that did not, and the fees incurred during the process.
+
+<ImageStacking image1="/images/tutorials/airdropNfts/excelFile.png" image2="/images/tutorials/airdropNfts/summaryReport.png" />
+
+### Validation
+
+To validate the airdrop transactions, visit Loopring.io and check the transaction tab. It will reflect all the recent airdrop activities associated with your account.
+
+### Initiating Another Airdrop
+
+If you need to perform another airdrop, simply click the `Again` button on the summary screen. This will restart the process, allowing you to enter new NFT data and wallet addresses for the next batch of airdrops.
+
+<Callout type="info" emoji="🔄">
+  To conduct additional airdrops, click the `Again` button and repeat the steps as required.
+</Callout>
+
+## Conclusion
+
+By following these steps, you have successfully used the Maize application to airdrop NFTs on the Loopring network. The process is designed to be efficient and user-friendly, ensuring a smooth airdrop experience.
+
+<Callout type="success" emoji="🎉">
+Congratulations on successfully airdropping NFTs to your recipients on Loopring!
+</Callout>
+
+  </Steps>
